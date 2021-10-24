@@ -22,4 +22,8 @@ function displayTimer(){
     }
     let h = hours < 10 ? "0" + hours : hours;
     let m = minutes < 10 ? "0" + minutes : minutes;
+    let s = seconds < 10 ? "0" + seconds : seconds;
+    let ms = miliseconds < 10 ? "00" + miliseconds : miliseconds < 100 ? "0" + miliseconds : miliseconds;
+
+    timerRef.innerHTML = ` ${h} : ${m} : ${s} : ${ms} `;
 } 
