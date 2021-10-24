@@ -2,7 +2,7 @@ let [miliseconds, seconds, minutes, hours] = [0,0,0,0];
 let timerRef = document.querySelector('.timerDisplay');
 let int;
 
-document.getElementById('.startTimer').addEventListener('click', ()=>{
+document.getElementById('startTimer').addEventListener('click', ()=>{
     int = setInterval(displayTimer, 10);
 });
 
