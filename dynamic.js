@@ -3,7 +3,10 @@ let timerRef = document.querySelector('.timerDisplay');
 let int;
 
 document.getElementById('startTimer').addEventListener('click', ()=>{
-    int = setInterval(displayTimer, 10);
+    if(int!==null){
+        clearInterval(int);
+    }
+    int = setInterval(displayTimer,10);
 });
 
 document.getElementById('stopTimer').addEventListener('click', ()=>{
